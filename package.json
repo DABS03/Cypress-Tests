@@ -1,0 +1,22 @@
+{
+  "open": "demo_cypress",
+  "version": "1.0.0",
+  "description": "Proyecto de pruebas - Práctica de Cypress",
+  "main": "index.js",
+  "scripts": {
+    "open": "npx cypress open",
+    "edge-tests": "cypress run --spec cypress/e2e/BankSmokeTest.cy.js --browser edge",
+    "chrome-tests": "cypress run --spec cypress/e2e/BankSmokeTest.cy.js --browser chrome",
+    "firefox-tests": "cypress run --spec cypress/e2e/BankSmokeTest.cy.js --browser firefox",
+
+    "orange-chrome": "cypress run --spec cypress/e2e/OrangeHRM.cy.js --browser chrome",
+    "orange-edge": "cypress run --spec cypress/e2e/OrangeHRM.cy.js --browser edge",
+    "orange-firefox": "cypress run --spec cypress/e2e/OrangeHRM.cy.js --browser firefox"
+
+  },
+  "author": "Diego Burgos",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.2.0"
+  }
+}
